@@ -44,6 +44,7 @@
 
 	%\subsection{Entwicklung}
 	\begin{frame}{Entwicklung}
+% "wie man sich mesh vorgestellt hat" stattdessen
 		\begin{block}{Hotspots}
 			\begin{itemize}
 				\item Immer mehr
@@ -61,22 +62,36 @@
           %     - dieses komische Video zeigen?
           %     - ne Folie die dediziert das "klappt nicht so" der "Router im Fenster"
           %       beleuchtet fände ich ziemlich cool (Rundstrahler/Airtime/Aufstellungsort/Reichweite/Fehlendes Interesse/billige HW)
-          %     Da das ganze eh "Entwicklung" heißt könnte man ja evtl mit der Idee anfangen, dann die erste Version mit olsrd, 
+          %     Da das ganze eh "Entwicklung" heißt könnte man ja evtl mit der Idee anfangen, dann die erste Version mit olsrd,
           %     dann die zweite mit Batman und jetzt den aktuellen Trend mit der "Mischung" vorstellen?
           %%
 			\end{itemize}
 		\end{block}
 	\end{frame}
 
-	\section{Dezentrale Vernetzung}
-	\begin{frame}[plain,standout]
-		\includegraphics[width=\framewidth]{media/dachzudach.png}
+% wlan frequenzen, belegung, überscheidung
+% doppelt verbrauchte airtime animation
+% multicasts werden langsam gesendet
+% jeder sieht jeden
+
+	\begin{frame}{Probleme}
+	Warum skaliert Mesh weder technisch noch sozial
+	\begin{block}{technisch}
+		\begin{itemize}
+			\item begrenzte frequenzen
+			\item mehrfach verbrauchte airtime
+		\end{itemize}
+
+	\end{block}
+	\begin{block}{sozial}
+		\begin{itemize}
+			\item wenig interaktion nötig -> wenig interaktion zwischen freifunkern
+		\end{itemize}
+	\end{block}
 	\end{frame}
-	\begin{frame}[plain,standout]
-		\includegraphics[height=\textheight]{media/rf_nbg.png}
-	\end{frame}
-	\begin{frame}[plain,standout]
-		\includegraphics[height=\textheight]{media/rf_nbgfue.png}
+
+	\begin{frame}[standout]
+		Back to the drawing board!
 	\end{frame}
 
 	\begin{frame}{Pico-Peering Agreement}
@@ -91,16 +106,64 @@
 		\end{enumerate}
 	\end{frame}
 
-	\section{Tiefere Einblicke}
-	\subsection{IPv6}
-	\begin{frame}{IPv6}
+	\section{Dezentrale Vernetzung}
+	\begin{frame}{Gezielte Verbindungen}
+		% Mast von Tobias
+		% Reichweite (Monitoring Screenshots)
+		% Speedtest
+	\end{frame}
+	\begin{frame}{Unabhängige Netze}
+		% Skalierbar
+		% Gewöhnliche Zugangspunkte
+		% Kontrolle über eigenes Netz
+	\end{frame}
+	\begin{frame}{Back to the Roots}
 	\end{frame}
 
-	\subsection{BGP}
-	\begin{frame}{BGP}
+	\begin{frame}[plain,standout]
+		\includegraphics[width=\framewidth]{media/dachzudach.png}
+	\end{frame}
+	\begin{frame}[plain,standout]
+		\includegraphics[height=\textheight]{media/rf_nbg.png}
+	\end{frame}
+	\begin{frame}[plain,standout]
+		\includegraphics[height=\textheight]{media/rf_nbgfue.png}
 	\end{frame}
 
-	\subsection{N-IX}
+	\begin{frame}{Zusammenfassung}
+		\begin{block}{Gezielte Verbindungen}
+		\begin{itemize}
+			\item Dedizierte Hardware
+			\item Höhere Reichweite
+			\item Deutlich höhere Geschwindigkeit
+		\end{itemize}
+		\end{block}
+		\begin{block}{Unabhängige Netze}
+		\begin{itemize}
+			\item
+		\end{itemize}
+		\end{block}
+		\begin{block}{Etablierte Standards}
+		\begin{itemize}
+			\item IP-Routing
+			\item Standardhardware
+			\item Anwendung von bekanntem Wissen
+		\end{itemize}
+		\end{block}
+	\end{frame}
+
+% Exkurs: IPv6
+	\begin{frame}{Exkurs: IPv6}
+		\begin{itemize}
+			\item Öffentliche Adressen
+			\item Weltweit erreichbar
+			\item Mehrere Anbieter
+			% F3NSub
+		\end{itemize}
+	\end{frame}
+
+% N-IX: Ausblick: Direkte [tunnelfreie] Anbindung ans Internet
+	\section{Ausblick}
 	\begin{frame}[plain,standout]
 		\centering
 		\includegraphics[width=\framewidth]{media/zbau-server.jpg}
@@ -111,4 +174,16 @@
 	\end{frame}
 	\begin{frame}{N-IX}
 	\end{frame}
+
+% Konkrete Vorteile
+%% Public IPv6
+%% Dinge zuhause [sinnvoll] hosten
+%% Erreichbarkeit bestimmter Netze ohne Abhängigkeit von großen ISP
+%%% symmetrische Verbindungen
+
+% Nachteile eines gewöhnlichen Internetanschlusses [extra]
+%% dynamische Adressen
+%% asymmetrische Verbindung, teilweise extrem
+%% Abhängig von Ausbauplänen des Providers
+%% Man kann mit den Menschen Reden, die das Netz bauen
 \end{document}

@@ -2,6 +2,7 @@
 \usetheme[subsectionpage=progressbar,block=fill]{metropolis}
 
 \usepackage{svg}
+\usepackage{pdfpages}
 \usepackage{ngerman}
 \usepackage[utf8]{inputenc}                   % replace by the encoding you are using
 
@@ -66,6 +67,11 @@
 % doppelt verbrauchte airtime animation
 % multicasts werden langsam gesendet
 % jeder sieht jeden
+
+	{
+		\setbeamercolor{background canvas}{bg=}
+		\includepdf[pages=1-22]{media/animation.pdf}
+	}
 
 	\begin{frame}{Mesh skaliert nicht!}
 	\begin{block}{technisch}
